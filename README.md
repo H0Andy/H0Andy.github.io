@@ -71,6 +71,7 @@ Keep things simple.
 
 * GitHub → https://github.com/H0Andy
 * Website → https://H0Andy.github.io
+* mail → leiz11904@gmail.com
 
 📄 License
 
