@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H0Andy · Personal Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(145deg, #f9fafc 0%, #eef2f5 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .card {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(0px);
+            border-radius: 2.5rem;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem;
+            transition: transform 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .card:hover {
+            transform: scale(1.01);
+        }
+
+        .badge {
+            display: inline-block;
+            background: #0a0c10;
+            color: #e6edf3;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 0.25rem 0.75rem;
+            border-radius: 40px;
+            letter-spacing: -0.2px;
+            margin-bottom: 1.5rem;
+            border: 1px solid #2d333b;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1f1c2c, #2a3b4c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -1px;
+            margin-bottom: 0.75rem;
+        }
+
+        .handle {
+            font-size: 1.2rem;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+            border-left: 3px solid #2c7da0;
+            padding-left: 1rem;
+            font-weight: 450;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #1f2a3e;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, #d4dcec, transparent);
+            margin: 1.8rem 0 1.8rem 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .project-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .project-list li {
+            background: #f8fafc;
+            margin: 0.75rem 0;
+            padding: 0.9rem 1.2rem;
+            border-radius: 1.2rem;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+            font-weight: 500;
+            color: #0c4a6e;
+        }
+
+        .project-list li:hover {
+            background: #ffffff;
+            border-color: #b9d0f0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+            transform: translateX(4px);
+        }
+
+        .project-list span {
+            font-weight: normal;
+            color: #2c3e50;
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 6px;
+            opacity: 0.8;
+        }
+
+        .link-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.8rem;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 0.7rem 1.4rem;
+            border-radius: 2rem;
+            font-weight: 500;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .btn-primary {
+            background: #0a0c10;
+            color: white;
+            border: 1px solid #2d333b;
+        }
+
+        .btn-primary:hover {
+            background: #2b313a;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #1e293b;
+            border: 1px solid #cbd5e1;
+        }
+
+        .btn-outline:hover {
+            background: #f1f5f9;
+            border-color: #94a3b8;
+        }
+
+        footer {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #5b6e8c;
+            border-top: 1px solid #e9edf2;
+            padding-top: 1.8rem;
+        }
+
+        @media (max-width: 550px) {
+            .card {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 2.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="badge">
+            ✨ GitHub Pages · live
+        </div>
+
+        <h1>H0Andy</h1>
+        <div class="handle">
+            @H0Andy · builder & creative tinkerer
+        </div>
+
+        <div class="description">
+            Hey there! I'm <strong>H0Andy</strong> — a developer who loves turning ideas into 
+            clean, fast, and human-friendly web experiments. 
+            This site is my small corner on GitHub Pages.
+        </div>
+
+        <div class="divider"></div>
+
+        <h2>
+            📌 what i'm up to
+        </h2>
+        <ul class="project-list">
+            <li>
+                🔭 building · first GitHub Pages site
+                <span>— static pages, smooth workflows, and open-source vibes</span>
+            </li>
+            <li>
+                🌱 learning · front-end & design systems
+                <span>— from HTML/CSS to real‑world components</span>
+            </li>
+            <li>
+                💡 exploring · indie dev tools and automation
+                <span>— making small tools that actually help</span>
+            </li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h2>
+            🧰 tech & interests
+        </h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+            <span style="background:#eef2ff; padding:0.3rem 0.9rem; border-radius:40px; font-size:0.85rem;">HTML/CSS</span>
+            <span style="background:#eef2ff; padding:0.3rem 0.9rem; border-radius:40px; font-size:0.85rem;">JavaScript</span>
+            <span style="background:#eef2ff; padding:0.3rem 0.9rem; border-radius:40px; font-size:0.85rem;">Git & GitHub</span>
+            <span style="background:#eef2ff; padding:0.3rem 0.9rem; border-radius:40px; font-size:0.85rem;">VS Code</span>
+            <span style="background:#eef2ff; padding:0.3rem 0.9rem; border-radius:40px; font-size:0.85rem;">Responsive design</span>
+        </div>
+
+        <div class="link-group">
+            <a href="https://github.com/H0Andy" class="btn btn-primary" target="_blank">
+                🐙 GitHub / H0Andy
+            </a>
+            <a href="#" class="btn btn-outline" id="emailBtn">
+                📬 contact (copy email)
+            </a>
+        </div>
+
+        <footer>
+            🌍 built with html + css · deployed on GitHub Pages · <span id="year"></span>
+        </footer>
+    </div>
+
+    <script>
+        // dynamic year in footer
+        document.getElementById('year').innerText = new Date().getFullYear();
+
+        // simple email copy (just a demo — you can replace 'hello@example.com' with your real email later)
+        const emailBtn = document.getElementById('emailBtn');
+        if(emailBtn) {
+            emailBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const email = 'hello@h0andy.local'; // you can change this later
+                navigator.clipboard.writeText(email).then(() => {
+                    alert('✓ Email copied: ' + email);
+                }).catch(() => {
+                    alert('💡 just a demo — your email would be here');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
